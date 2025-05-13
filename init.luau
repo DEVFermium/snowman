@@ -10,6 +10,8 @@ hitbox.CanCollide = false
 hitbox.Transparency = 1
 hitbox.Anchored = true
 
+local clickDetector = Instance.new("ClickDetector", hitbox) :: ClickDetector
+
 local src = script.Parent:WaitForChild("scr")
 
 for _, v in src:GetChildren() do
